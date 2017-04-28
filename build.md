@@ -17,9 +17,14 @@
     - openssl-1.0.2을 플랫폼 별로 빌드한다. D:/Libraries/openssl-1.0.2-x86 と D:/Libraries/openssl-1.0.2-x64
     - components 파일을 열어서 OpenSSL 관련 디렉토리를 위의 디렉토리로 변경한다. set OPENSSL_DIR=D:\Libraries\openssl-1.0.2-x64
 - 생성된 lib 파일과 헤더 파일 디렉토리로 VS 프로젝트 설정에 등록한다.
-<img src="resource\PocoVCInclude.png">
+ 
+<img src="resource\PocoVCInclude.png">  
 <img src="resource\PocoVCLib.png">
   
+<br>  
+<br>  
+<br> 
+<br>
 
   
 ## Linux
@@ -47,5 +52,14 @@ $ make
 lib/Linux/x86_64
 </pre>
  
-디버거 버전은 라이브러리 이름 뒤에 'd'가 붙고, 64비트 버전은 뒤에 '64'가 붙는다.  
+디버그 버전은 라이브러리 이름 뒤에 'd'가 붙고, 64비트 버전은 뒤에 '64'가 붙는다.  
+
+<br>  
+<br>  
+
+### 예제 돌려보기
+
+http://knoow.tistory.com/74  
+http://scriptlabo.blog26.fc2.com/blog-entry-35.html  
+https://www.qoosky.io/techs/8e92d3d34a  
 
