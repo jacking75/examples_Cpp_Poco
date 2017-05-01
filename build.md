@@ -54,6 +54,38 @@ lib/Linux/x86_64
  
 디버그 버전은 라이브러리 이름 뒤에 'd'가 붙고, 64비트 버전은 뒤에 '64'가 붙는다.  
 
+
+### 샘플 예제
+sample.cpp
+```
+#include <iostream>
+#include <Poco/RegularExpression.h>
+
+int main() {
+    Poco::RegularExpression regexp("^[a-zA-Z]+");
+
+    std::string buf;
+    regexp.extract("ABC123", buf);
+    std::cout << buf << std::endl; //=> ABC
+
+    return 0;
+}
+```
+
+Makefile
+```
+CXX=g++
+CXXFLAGS=-I/mnt/e/linux/dev/c++/thirdparty/poco/Foundation/include
+LDFLAGS=-L/mnt/e/linux/dev/c++/thirdparty/poco/lib/Linux/x86_64
+LDLIBS=-lPocoFoundation64
+
+all:sample
+
+clean:
+	rm -rf sample
+	rm -rf *.o
+```
+  
 <br>  
 <br>  
 
