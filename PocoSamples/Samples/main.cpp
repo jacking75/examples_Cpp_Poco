@@ -5,6 +5,8 @@
 #include "stopwatch.h"
 #include "singletonholder.h"
 #include "cache.h"
+#include "checksum.h"
+#include "dynamicFactory.h"
 
 
 int main()
@@ -13,7 +15,10 @@ int main()
 	//Sample_StopWatch();
 	//Sample_SingletonHolder();
 	//Sample_LRUCache();
-	Sample_ExpireCache();
+	//Sample_ExpireCache();
+	//Sample_Checksum();
+	Sample_DynamicFactory();
+
 
 	getchar();
 	return 0;

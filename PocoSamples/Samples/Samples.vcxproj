@@ -152,6 +152,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cache.h" />
+    <ClInclude Include="checksum.h" />
+    <ClInclude Include="dynamicFactory.h" />
     <ClInclude Include="iniReader.h" />
     <ClInclude Include="singletonholder.h" />
     <ClInclude Include="stopwatch.h" />
