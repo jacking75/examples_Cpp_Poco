@@ -7,6 +7,8 @@
 #include "cache.h"
 #include "checksum.h"
 #include "dynamicFactory.h"
+#include "workerThread.h"
+#include "dateTime.h"
 
 
 int main()
@@ -17,8 +19,9 @@ int main()
 	//Sample_LRUCache();
 	//Sample_ExpireCache();
 	//Sample_Checksum();
-	Sample_DynamicFactory();
-
+	//Sample_DynamicFactory();
+	//Sample_WorkerThread();
+	Sample_DateTime();
 
 	getchar();
 	return 0;

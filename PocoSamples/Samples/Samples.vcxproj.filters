@@ -27,5 +27,11 @@
     <ClInclude Include="dynamicFactory.h">
       <Filter>poco</Filter>
     </ClInclude>
+    <ClInclude Include="workerThread.h">
+      <Filter>poco</Filter>
+    </ClInclude>
+    <ClInclude Include="dateTime.h">
+      <Filter>poco</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
