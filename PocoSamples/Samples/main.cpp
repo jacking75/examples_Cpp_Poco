@@ -9,6 +9,9 @@
 #include "dynamicFactory.h"
 #include "workerThread.h"
 #include "dateTime.h"
+#include "delegate.h"
+#include "notificationcenter.h"
+#include "environment.h"
 
 
 int main()
@@ -21,7 +24,10 @@ int main()
 	//Sample_Checksum();
 	//Sample_DynamicFactory();
 	//Sample_WorkerThread();
-	Sample_DateTime();
+	//Sample_DateTime();
+	//Sample_Delegate();
+	//Sample_NotificationCenter();
+	Sample_Environment();
 
 	getchar();
 	return 0;

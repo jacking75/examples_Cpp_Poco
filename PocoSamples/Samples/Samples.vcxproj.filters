@@ -33,5 +33,14 @@
     <ClInclude Include="dateTime.h">
       <Filter>poco</Filter>
     </ClInclude>
+    <ClInclude Include="notificationcenter.h">
+      <Filter>poco</Filter>
+    </ClInclude>
+    <ClInclude Include="delegate.h">
+      <Filter>poco</Filter>
+    </ClInclude>
+    <ClInclude Include="environment.h">
+      <Filter>poco</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
