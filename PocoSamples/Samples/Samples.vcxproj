@@ -159,6 +159,7 @@
     <ClInclude Include="environment.h" />
     <ClInclude Include="iniReader.h" />
     <ClInclude Include="notificationcenter.h" />
+    <ClInclude Include="serverApplication.h" />
     <ClInclude Include="singletonholder.h" />
     <ClInclude Include="stopwatch.h" />
     <ClInclude Include="workerThread.h" />

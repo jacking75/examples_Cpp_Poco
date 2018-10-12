@@ -12,9 +12,10 @@
 #include "delegate.h"
 #include "notificationcenter.h"
 #include "environment.h"
+#include "serverApplication.h"
 
 
-int main()
+int main(int argc, char** argv)
 {
 	//Sample_iniReader();
 	//Sample_StopWatch();
@@ -27,7 +28,8 @@ int main()
 	//Sample_DateTime();
 	//Sample_Delegate();
 	//Sample_NotificationCenter();
-	Sample_Environment();
+	//Sample_Environment();
+	Sample_ServerApplication(argc, argv);
 
 	getchar();
 	return 0;

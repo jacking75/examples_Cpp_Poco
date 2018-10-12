@@ -42,5 +42,8 @@
     <ClInclude Include="environment.h">
       <Filter>poco</Filter>
     </ClInclude>
+    <ClInclude Include="serverApplication.h">
+      <Filter>poco</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
