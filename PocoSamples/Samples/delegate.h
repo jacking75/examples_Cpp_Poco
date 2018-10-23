@@ -118,7 +118,11 @@ void TestAsyncNotify()
 
 void Sample_Delegate()
 {	
+	std::cout << "[ Sample_Delegate ]" << std::endl;
+
 	TestBasicEvent();
 	TestExpireingTarget();
 	TestAsyncNotify();
+
+	std::cout << std::endl << std::endl;
 }

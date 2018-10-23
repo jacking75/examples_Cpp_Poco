@@ -38,8 +38,12 @@ public:
 
 void Sample_iniReader()
 {
+	std::cout << "[ Sample_iniReader ]" << std::endl;
+
 	ServerConfig config;
 	config.LoadServerConfig();
 
 	printf("[%s] ChannelInfo - ChannelCount(%d), UserCount(%d)", __FUNCTION__, config.m_MaxChannelCount, config.m_MaxChannelUserCount);
+
+	std::cout << std::endl << std::endl;
 }

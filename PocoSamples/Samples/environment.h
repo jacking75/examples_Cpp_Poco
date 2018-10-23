@@ -13,6 +13,8 @@ const std::string kManPathStr("MANPATH");
 
 void Sample_Environment()
 {
+	std::cout << "[ Sample_Environment ]" << std::endl;
+
 	// Poco::Environment::get
 	try
 	{
@@ -61,4 +63,6 @@ void Sample_Environment()
 
 	// Poco::Environment::processorCount
 	std::cout << Poco::format(" processorCount: %u", Poco::Environment::processorCount()) << std::endl;
+
+	std::cout << std::endl << std::endl;
 }

@@ -72,6 +72,10 @@ protected:
 
 void Sample_ServerApplication(int argc, char** argv)
 {
+	std::cout << "[ Sample_ServerApplication ]" << std::endl;
+
 	MiniServer app;
 	app.run(argc, argv);
+
+	std::cout << std::endl << std::endl;
 }

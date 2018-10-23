@@ -4,6 +4,8 @@
 
 void Sample_Checksum()
 {
+	std::cout << "[ Sample_Checksum ]" << std::endl;
+
 	char buffer[] = { "0123456789" };
 
 	Poco::Checksum checker1(Poco::Checksum::TYPE_ADLER32);
@@ -16,4 +18,6 @@ void Sample_Checksum()
 	checker2.update(buffer, 10);
 
 	std::cout << checker2.checksum() << std::endl;
+
+	std::cout << std::endl << std::endl;
 }

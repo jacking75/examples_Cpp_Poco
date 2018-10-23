@@ -7,6 +7,8 @@
 
 void Sample_LRUCache()
 {
+	std::cout << "[ Sample_LRUCache ]" << std::endl;
+
 	Poco::LRUCache<int, int> aCache(3);
 	aCache.add(1, 2);
 	aCache.add(3, 4);
@@ -33,11 +35,15 @@ void Sample_LRUCache()
 	{
 		std::cout << key << std::endl;
 	}
+
+	std::cout << std::endl << std::endl;
 }
 
 
 void Sample_ExpireCache()
 {
+	std::cout << "[ Sample_ExpireCache ]" << std::endl;
+
 	auto expireTime = 250; // 밀리세컨드
 	Poco::ExpireCache<int, int> aCache(expireTime);
 	
@@ -64,4 +70,6 @@ void Sample_ExpireCache()
 	{
 		std::cout << key << std::endl;
 	}
+
+	std::cout << std::endl << std::endl;
 }

@@ -8,6 +8,8 @@
 
 void Sample_StopWatch()
 {
+	std::cout << "[ Sample_StopWatch ]" << std::endl;
+
 	Poco::Stopwatch watch;
 
 	std::cout << "시간 측정 시작" << std::endl;
@@ -20,4 +22,6 @@ void Sample_StopWatch()
 
 	// microseconds, seconds 단위로만 측정 가능
 	printf("[%s] 걸린 시간 (%I64d)microseconds, (%d)seconds", __FUNCTION__, watch.elapsed(), watch.elapsedSeconds());
+
+	std::cout << std::endl << std::endl;
 }

@@ -98,6 +98,8 @@ Poco::FastMutex Worker::_mutex; // static 변수의 실체
 
 void Sample_WorkerThread()
 {
+	std::cout << "[ Sample_WorkerThread ]" << std::endl;
+
 	// 통지 오브젝트 queue
 	Poco::NotificationQueue queue;
 
@@ -132,4 +134,6 @@ void Sample_WorkerThread()
 
 	// 모든 워커 스레드의 종료 대기
 	pool.joinAll();
+
+	std::cout << std::endl << std::endl;
 }

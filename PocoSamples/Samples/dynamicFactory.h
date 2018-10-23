@@ -65,30 +65,9 @@ public:
 	}
 };
 
-//typedef Poco::TypeListType<
-//	TriangleShape
-//	, RectangleShape
-//	, OvalShape
-//>::HeadType ShapeTypeList;
-//
-//template<EShapeType N>
-//void RegisterClass(Poco::DynamicFactory<Shape>& shapeFactory)
-//{
-//	typedef typename Poco::TypeGetter<N, ShapeTypeList>::HeadType	ShapeType;
-//	shapeFactory.registerClass<ShapeType>(kShapeNames[N]);
-//	RegisterClass<static_cast<EShapeType>(N + 1)>(shapeFactory);	// recursive call
-//}
-//
-//template<>
-//void RegisterClass<eOval>(Poco::DynamicFactory<Shape>& shapeFactory)
-//{
-//	typedef Poco::TypeGetter<eOval, ShapeTypeList>::HeadType	ShapeType;
-//	shapeFactory.registerClass<ShapeType>(kShapeNames[eOval]);
-//}
 
 void RegisterClass(Poco::DynamicFactory<Shape>& shapeFactory)
 {
-	//typedef Poco::TypeGetter<eOval, ShapeTypeList>::HeadType	ShapeType;
 	shapeFactory.registerClass<TriangleShape>("TriangleShape");
 	shapeFactory.registerClass<RectangleShape>("RectangleShape");
 	shapeFactory.registerClass<OvalShape>("OvalShape");
@@ -96,6 +75,8 @@ void RegisterClass(Poco::DynamicFactory<Shape>& shapeFactory)
 
 void Sample_DynamicFactory()
 {
+	std::cout << "[ Sample_DynamicFactory ]" << std::endl;
+
 	Poco::DynamicFactory<Shape> shapeFactory;
 
 	RegisterClass(shapeFactory);
@@ -109,4 +90,6 @@ void Sample_DynamicFactory()
 
 	auto shape3 = shapeFactory.createInstance("OvalShape");
 	shape3->draw();
+
+	std::cout << std::endl << std::endl;
 }

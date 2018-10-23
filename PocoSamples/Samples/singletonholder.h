@@ -60,6 +60,8 @@ private:
 
 void Sample_SingletonHolder()
 {
+	std::cout << "[ Sample_SingletonHolder ]" << std::endl;
+
 	{
 		std::cout << " --- SingletonTarget ---" << std::endl;
 		Poco::SingletonHolder<SingletonTarget> singleton;
@@ -71,4 +73,6 @@ void Sample_SingletonHolder()
 		ClassWithDefaultInstance::defaultInstance().doSomething();
 		ClassWithDefaultInstance::defaultInstance().doSomething();
 	}
+
+	std::cout << std::endl << std::endl;
 }

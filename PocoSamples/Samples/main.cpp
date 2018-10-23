@@ -17,19 +17,32 @@
 
 int main(int argc, char** argv)
 {
-	//Sample_iniReader();
-	//Sample_StopWatch();
-	//Sample_SingletonHolder();
-	//Sample_LRUCache();
-	//Sample_ExpireCache();
-	//Sample_Checksum();
-	//Sample_DynamicFactory();
-	//Sample_WorkerThread();
-	//Sample_DateTime();
-	//Sample_Delegate();
-	//Sample_NotificationCenter();
-	//Sample_Environment();
+	Sample_iniReader();
+
+	Sample_StopWatch();
+	
+	Sample_SingletonHolder();
+	
+	Sample_LRUCache();
+	
+	Sample_ExpireCache();
+	
+	Sample_Checksum();
+	
+	Sample_DynamicFactory();
+	
+	Sample_WorkerThread();
+	
+	Sample_DateTime();
+	
+	Sample_Delegate();
+	
+	Sample_NotificationCenter();
+	
+	Sample_Environment();
+	
 	Sample_ServerApplication(argc, argv);
+
 
 	getchar();
 	return 0;

@@ -55,6 +55,8 @@ private:
 
 void Sample_NotificationCenter()
 {
+	std::cout << "[ Sample_NotificationCenter ]" << std::endl;
+
 	Poco::NotificationCenter nc;
 
 	ObserverWorker worker1(std::string("worker1"));
@@ -69,4 +71,6 @@ void Sample_NotificationCenter()
 	nc.postNotification(new BaseNotification(0));	
 	nc.postNotification(new BaseNotification(1));	
 	nc.postNotification(new BaseNotification(2));
+
+	std::cout << std::endl << std::endl;
 }

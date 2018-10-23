@@ -39,6 +39,8 @@ void IntUnixTime()
 
 void Sample_DateTime()
 {
+	std::cout << "[ Sample_DateTime ]" << std::endl;
+
 	Poco::DateTime dateTime;
 
 	std::cout << "  Current DateTime (UTC)" << std::endl;
@@ -53,4 +55,6 @@ void Sample_DateTime()
 
 	
 	IntUnixTime();
+
+	std::cout << std::endl << std::endl;
 }
